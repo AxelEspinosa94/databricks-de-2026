@@ -1,4 +1,3 @@
-```markdown
 # 🔥 Streaming Sources in `readStream`  
 
 Cuando usas:
@@ -160,9 +159,8 @@ Porque:
 
 Es la forma **correcta y profesional** de hacer ingestión en Databricks.
 
-```
+------------------------------------------------------------------------------
 
-```markdown
 # 🔥 Streaming Sources in `readStream`
 
 When you use:
@@ -324,4 +322,3 @@ Because:
 - You are using Volumes (they support streaming)  
 
 This is the **correct and professional** way to build ingestion pipelines in Databricks.
-```
