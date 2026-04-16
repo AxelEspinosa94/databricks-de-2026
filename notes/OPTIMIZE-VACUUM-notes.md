@@ -179,8 +179,8 @@ flowchart TD
 ```mermaid
 flowchart TD
     A["Obsolete Files\n(Replaced by OPTIMIZE)"] --> B["VACUUM\n(Retain N Hours)"]
-    B --> C[Delete Files Older Than N Hours]
-    C --> D[Storage Cleanup]
+    B --> C["Delete Files Older Than N Hours"]
+    C --> D["Storage Cleanup"]
 ```
 
 ---
@@ -189,8 +189,8 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A[OPTIMIZE<br>Compaction] --> B[Obsolete Files]
-    B --> C[VACUUM<br>Retention Window]
+    A[OPTIMIZE\nCompaction] --> B[Obsolete Files]
+    B --> C["VACUUM\n(Retention Window)"]
     C --> D[Clean Storage]
 ```
 
