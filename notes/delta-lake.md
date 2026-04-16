@@ -189,11 +189,11 @@ VACUUM catalog.schema.table RETAIN 168 HOURS;
 
 ```mermaid
 flowchart TD
-    A[Raw Data (JSON, CSV, Parquet)] --> B[DataFrame API Transformations]
-    B --> C[Delta Lake - ACID Storage]
-    C --> D[Time Travel]
-    C --> E[Schema Enforcement]
-    C --> F[Optimizations: OPTIMIZE / VACUUM]
+    A["Raw Data (JSON, CSV, Parquet)"] --> B["DataFrame API Transformations"]
+    B --> C["Delta Lake - ACID Storage"]
+    C --> D["Time Travel"]
+    C --> E["Schema Enforcement"]
+    C --> F["Optimizations: OPTIMIZE / VACUUM"]
 ```
 
 ---
