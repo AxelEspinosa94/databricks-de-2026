@@ -31,7 +31,7 @@ Los Volumes son el reemplazo moderno de DBFS para almacenar archivos.
 <b>Características de Volumes</b>
 
 - Se acceden vía rutas como:
-/Volumes/<catalog>/<schema>/<volume>/
+`/Volumes/<catalog>/<schema>/<volume>/`
 - Soportan:
 - archivos
 - checkpoints
