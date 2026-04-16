@@ -15,10 +15,31 @@ El objetivo es mantener un registro claro, versionado y profesional de todo el m
 ---
 
 ## 📚 Estructura del repositorio
-
-databricks-de-study/ │ ├── ingestion/ │   ├── autoloader/ │   └── copy_into/ │ ├── transformations/ │   ├── dataframe_api/ │   └── spark_sql/ │ ├── delta/ │   ├── merge/ │   ├── optimize/ │   └── vacuum/ │ ├── notes/ │   ├── lakehouse.md │   ├── delta-lake.md │   └── medallion.md │ └── practice/ ├── bronze_silver_gold/ └── sample_data/
-
-
+```
+databricks-de-study/
+│
+├── ingestion/
+│   ├── autoloader/
+│   └── copy_into/
+│
+├── transformations/
+│   ├── dataframe_api/
+│   └── spark_sql/
+│
+├── delta/
+│   ├── merge/
+│   ├── optimize/
+│   └── vacuum/
+│
+├── notes/
+│   ├── lakehouse.md
+│   ├── delta-lake.md
+│   └── medallion.md
+│
+└── practice/
+    ├── bronze_silver_gold/
+    └── sample_data/
+```
 ---
 
 ## 🧪 Objetivos del repositorio
@@ -67,6 +88,7 @@ The goal is to maintain a clear, versioned, and professional record of all the m
 ---
 
 ## 📚 Repository Structure
+```
 databricks-de-study/
 │
 ├── ingestion/
@@ -90,7 +112,7 @@ databricks-de-study/
 └── practice/
     ├── bronze_silver_gold/
     └── sample_data/
-
+```
 
 ---
 
