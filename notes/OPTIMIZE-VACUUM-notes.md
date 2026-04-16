@@ -1,13 +1,3 @@
-Claro que sí, Axel — aquí tienes un **archivo `.md` bilingüe**, con **diagramas Mermaid**, **primero en inglés y luego en español**, exactamente como lo pediste.  
-Está listo para pegarse en tu repo como:
-
-```
-notes/optimize-vacuum-bilingual.md
-```
-
----
-
-```markdown
 # 🧹 Delta Lake — OPTIMIZE & VACUUM (Bilingual + Mermaid)
 
 This document explains how **OPTIMIZE** and **VACUUM** work in Delta Lake, how they interact, and what actually happens under the hood.  
@@ -381,14 +371,4 @@ flowchart LR
 OPTIMIZE **compacta**, VACUUM **limpia**.  
 Juntos mantienen tus tablas Delta rápidas, ligeras y consistentes.
 
-```
-
 ---
-
-Si quieres, puedo generar:
-
-- Una **versión ultra‑resumida tipo flashcards**  
-- Una **versión para tu README general del repo**  
-- Un **diagrama único combinando todo el flujo Delta Lake**  
-
-Tú dime y lo armamos.
