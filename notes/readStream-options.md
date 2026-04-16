@@ -1,4 +1,4 @@
-# 🔥 Streaming Sources in `readStream`  
+# 🔥 Streaming Sources en `readStream`  
 
 Cuando usas:
 
