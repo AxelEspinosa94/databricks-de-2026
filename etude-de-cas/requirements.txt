@@ -1,0 +1,21 @@
+# --- Core ---
+requests==2.31.0
+python-dotenv==1.0.1
+
+# --- Data processing ---
+pandas==2.2.1
+numpy==1.26.4
+
+# --- Visualization ---
+matplotlib==3.8.3
+seaborn==0.13.2
+
+# --- Machine Learning ---
+scikit-learn==1.4.1.post1
+
+# --- Notebooks ---
+jupyter==1.0.0
+ipykernel==6.29.3
+
+# --- Utils ---
+tqdm==4.66.2
