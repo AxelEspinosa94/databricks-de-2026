@@ -95,18 +95,18 @@ The script `extract_fixtures_final.py`:
 ## 🗂️ Team Groups (Fixed Order)
 
 ```
-Mexico, South Korea, South Africa, Czech Republic
-Canada, Bosnia and Herzegovina, Qatar, Switzerland
-Brazil, Morocco, Haiti, Scotland
-USA, Australia, Paraguay, Turkey
-Germany, Ecuador, Ivory Coast, Curacao
-Netherlands, Japan, Sweden, Tunisia
-Belgium, Iran, Egypt, New Zealand
-Spain, Uruguay, Saudi Arabia, Cape Verde
-France, Senegal, Iraq, Norway
-Argentina, Algeria, Austria, Jordan
-Portugal, Colombia, Uzbekistan, Congo DR
-England, Croatia, Ghana, Panama
+Group A: Mexico, South Korea, South Africa, Czech Republic
+Group B: Canada, Bosnia and Herzegovina, Qatar, Switzerland
+Group C: Brazil, Morocco, Haiti, Scotland
+Group D: USA, Australia, Paraguay, Turkey
+Group E: Germany, Ecuador, Ivory Coast, Curacao
+Group F: Netherlands, Japan, Sweden, Tunisia
+Group G: Belgium, Iran, Egypt, New Zealand
+Group H: Spain, Uruguay, Saudi Arabia, Cape Verde
+Group I: France, Senegal, Iraq, Norway
+Group J: Argentina, Algeria, Austria, Jordan
+Group K: Portugal, Colombia, Uzbekistan, Congo DR
+Group L: England, Croatia, Ghana, Panama
 ```
 
 Names are **normalized** for API‑Football.
@@ -339,18 +339,18 @@ El script `extract_fixtures_final.py`:
 ## 🗂️ Grupos de selecciones (orden fijo)
 
 ```
-México, Corea del Sur, Sudáfrica, República Checa
-Canadá, Bosnia y Herzegovina, Qatar, Suiza
-Brasil, Marruecos, Haití, Escocia
-Estados Unidos, Australia, Paraguay, Turquía
-Alemania, Ecuador, Costa de Marfil, Curazao
-Países Bajos, Japón, Suecia, Túnez
-Bélgica, Irán, Egipto, Nueva Zelanda
-España, Uruguay, Arabia Saudita, Cabo Verde
-Francia, Senegal, Irak, Noruega
-Argentina, Argelia, Austria, Jordania
-Portugal, Colombia, Uzbekistán, República Democrática del Congo
-Inglaterra, Croacia, Ghana, Panamá
+Grupo A: México, Corea del Sur, Sudáfrica, República Checa
+Grupo B: Canadá, Bosnia y Herzegovina, Qatar, Suiza
+Grupo C: Brasil, Marruecos, Haití, Escocia
+Grupo D: Estados Unidos, Australia, Paraguay, Turquía
+Grupo E: Alemania, Ecuador, Costa de Marfil, Curazao
+Grupo F: Países Bajos, Japón, Suecia, Túnez
+Grupo G: Bélgica, Irán, Egipto, Nueva Zelanda
+Grupo H: España, Uruguay, Arabia Saudita, Cabo Verde
+Grupo I: Francia, Senegal, Irak, Noruega
+Grupo J: Argentina, Argelia, Austria, Jordania
+Grupo K: Portugal, Colombia, Uzbekistán, República Democrática del Congo
+Grupo L: Inglaterra, Croacia, Ghana, Panamá
 ```
 
 Los nombres ya están **normalizados** para API‑Football.
