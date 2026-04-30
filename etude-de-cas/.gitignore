@@ -8,6 +8,7 @@ __pycache__/
 .env
 First.ipynb
 API-Football-source-to-landing-LOCAL-Ext.ipynb
+*.json
 input/
 
 # C extensions
