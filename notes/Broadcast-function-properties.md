@@ -2,8 +2,6 @@
 ---
 
 # 🔥 Broadcast Joins en Spark  
-## Bilingüe (English + Spanish)  
-## Explicación basada en los últimos dos outputs
 
 ---
 
