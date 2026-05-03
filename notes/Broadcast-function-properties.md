@@ -59,7 +59,7 @@ df_join = df_big.join(F.broadcast(df_small), "id", "left")
 
 # 4. Comparison With Excel’s VLOOKUP
 
-Your intuition was correct, but here’s the precise analogy:
+Here is a precise analogy:
 
 ### ✔ Excel VLOOKUP  
 - Looks up row by row  
@@ -93,6 +93,59 @@ flowchart LR
 
     F["Big DF (Not Moved)"] --> E
 ```
+
+# 6. How Many Nodes can we use?
+
+This depends on where we are running Spark. 
+
+- Databricks
+- Local Spark
+- EMR/Kubernetes/YARN
+
+We are focusing on Databricks so, short answer is, we don't configure nodes directly. Databricks uses administered clusters so we only must configure:
+
+- Workers number
+- Instance Type
+- Auto-Scaling
+
+Spark internally asigns:
+
+- 1 node per woker
+- 1 driver per cluster, so
+
+> #nodes == #workers
+
+### Example
+
+|Cluster config | Nodes |
+|-----------|----------------|
+|1 driver + 2 workers |	2 |
+|1 driver + 8 workers |	8 |
+|Autoscaling 2–10 workers |	2–10 |
+
+To see how many nodes we have we have some options
+
+### Spark UI (Most accurate)
+
+In the notebook select `Cluster -> Spark UI`, then go to `Executors` tab, and you'll se something like
+```
+Driver: 1
+Executors: 8
+```
+
+### Via Code
+
+```python3
+spark.sparkContext.getConf().get("spark.executor.instances")
+```
+
+In Databricks the previous code can throw `None` due to Databricks not being able to administrate this. However, you can see:
+
+```python3
+spark.sparkContext.statusTracker().getExecutorInfos()
+```
+
+which returns a list of active executors
 
 ---
 
@@ -142,7 +195,7 @@ df_join = df_big.join(F.broadcast(df_small), "id", "left")
 
 # 4. Comparación con BUSCARV de Excel
 
-Tu intuición fue buena, pero aquí va la versión exacta:
+Aquí tenemos una analogía precisa:
 
 ### ✔ BUSCARV en Excel  
 - Busca fila por fila  
@@ -176,6 +229,65 @@ flowchart LR
 
     F["DF grande (no se mueve)"] --> E
 ```
+
+---
+
+
+# 6. ¿Cuántos nodos podemos usar?
+
+Esto depende de dónde estemos ejecutando Spark.
+
+- Databricks  
+- Spark local  
+- EMR/Kubernetes/YARN  
+
+Nos estamos enfocando en Databricks, así que la respuesta corta es: **no configuramos los nodos directamente**.  
+Databricks usa clusters administrados, por lo que solo debemos configurar:
+
+- Número de workers  
+- Tipo de instancia  
+- Auto-Scaling  
+
+Spark internamente asigna:
+
+- 1 nodo por worker  
+- 1 driver por cluster, así que:
+
+> #nodos == #workers
+
+### Ejemplo
+
+| Configuración del cluster | Nodos |
+|---------------------------|--------|
+| 1 driver + 2 workers      | 2      |
+| 1 driver + 8 workers      | 8      |
+| Autoscaling 2–10 workers  | 2–10   |
+
+Para ver cuántos nodos tenemos, existen algunas opciones.
+
+### Spark UI (la más precisa)
+
+En el notebook selecciona `Cluster -> Spark UI`, luego ve a la pestaña `Executors`, y verás algo como:
+
+```
+Driver: 1
+Executors: 8
+```
+
+### Vía código
+
+```python
+spark.sparkContext.getConf().get("spark.executor.instances")
+```
+
+En Databricks este código puede regresar `None` debido a que Databricks administra esto automáticamente.  
+Sin embargo, puedes ver:
+
+```python
+spark.sparkContext.statusTracker().getExecutorInfos()
+```
+
+lo cual devuelve una lista de ejecutores activos.
 
 ---
 
