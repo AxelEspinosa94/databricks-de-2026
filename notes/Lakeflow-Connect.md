@@ -1,6 +1,4 @@
 # 🌊 Databricks Lakeflow Connect — Overview & Cost Analysis  
-## Bilingual (English + Spanish)  
-## GitHub‑Safe Mermaid Diagrams
 
 This document explains what **Lakeflow Connect** is, how it compares to **manual API ingestion** (e.g., Jira), and when it is economically justified.
 
@@ -105,7 +103,7 @@ It charges based on:
 
 ---
 
-# 5. Mermaid Diagrams (GitHub‑Safe)
+# 5. Diagrams
 
 ## 🔷 Architecture Comparison
 
@@ -229,7 +227,7 @@ Cobra por:
 
 ---
 
-# 5. Diagramas Mermaid (Compatibles con GitHub)
+# 5. Diagramas
 
 ## 🔷 Comparación de Arquitectura
 
