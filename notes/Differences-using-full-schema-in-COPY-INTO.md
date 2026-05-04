@@ -8,7 +8,7 @@
 
 # 🇺🇸 **English Version**
 
-## ## Overview
+## Overview
 When loading JSON data into a Delta table using `COPY INTO`, you can choose between:
 
 1. A **fully explicit SELECT** listing every flattened column  
@@ -19,7 +19,7 @@ This document explains the differences, trade‑offs, and when to use each one.
 
 ---
 
-## ## 1. Explicit SELECT (the “big query”)
+## 1. Explicit SELECT (the “big query”)
 
 Example:
 
@@ -49,7 +49,7 @@ SELECT
 
 ---
 
-## ## 2. Using `fixture.*` (compact form)
+## 2. Using `fixture.*` (compact form)
 
 Example:
 
@@ -72,7 +72,7 @@ LATERAL VIEW explode(response) AS fixture
 
 ---
 
-## ## 3. Comparison Table
+## 3. Comparison Table
 
 | Scenario | Explicit SELECT | `fixture.*` |
 |---------|------------------|-------------|
@@ -86,7 +86,7 @@ LATERAL VIEW explode(response) AS fixture
 
 ---
 
-## ## 4. Conclusion
+## 4. Conclusion
 
 For your pipeline — especially with API‑Football’s unstable and inconsistent responses — the **explicit SELECT** is the correct and professional choice.
 
@@ -101,7 +101,7 @@ It guarantees:
 
 # 🇲🇽 **Versión en Español**
 
-## ## Resumen
+## Resumen
 Al cargar datos JSON en una tabla Delta usando `COPY INTO`, puedes elegir entre:
 
 1. Un **SELECT explícito** con todas las columnas flatten  
@@ -112,7 +112,7 @@ Aquí se explican las diferencias, ventajas y cuándo usar cada uno.
 
 ---
 
-## ## 1. SELECT explícito (el “query grandote”)
+## 1. SELECT explícito (el “query grandote”)
 
 Ejemplo:
 
@@ -142,7 +142,7 @@ SELECT
 
 ---
 
-## ## 2. Usar `fixture.*` (forma compacta)
+## 2. Usar `fixture.*` (forma compacta)
 
 Ejemplo:
 
@@ -165,7 +165,7 @@ LATERAL VIEW explode(response) AS fixture
 
 ---
 
-## ## 3. Tabla comparativa
+## 3. Tabla comparativa
 
 | Escenario | SELECT explícito | `fixture.*` |
 |-----------|------------------|-------------|
@@ -179,7 +179,7 @@ LATERAL VIEW explode(response) AS fixture
 
 ---
 
-## ## 4. Conclusión
+## 4. Conclusión
 
 Para tu pipeline — especialmente con API‑Football, que cambia campos sin avisar — el **SELECT explícito** es la opción correcta.
 
