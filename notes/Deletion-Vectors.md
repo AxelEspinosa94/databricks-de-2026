@@ -7,7 +7,7 @@
 
 # 🇺🇸 **Deletion Vectors in Delta Lake**
 
-## ## 1. What Are Deletion Vectors?
+## 1. What Are Deletion Vectors?
 
 **Deletion Vectors (DVs)** are a Delta Lake feature that mark specific rows as *logically deleted* **without rewriting the entire Parquet file**.
 
@@ -24,7 +24,7 @@ Deletion vectors are stored separately from the data files and applied at read t
 
 ---
 
-## ## 2. Why Deletion Vectors Matter
+## 2. Why Deletion Vectors Matter
 
 ### Benefits
 
@@ -44,7 +44,7 @@ Delta Lake decides whether to use DVs based on table properties and file sizes.
 
 ---
 
-## ## 3. Enabling Deletion Vectors
+## 3. Enabling Deletion Vectors
 
 ### Enable on table creation
 
@@ -69,7 +69,7 @@ SET TBLPROPERTIES ('delta.enableDeletionVectors' = true);
 
 ---
 
-## ## 4. How Deletion Vectors Work Internally
+## 4. How Deletion Vectors Work Internally
 
 When a row is deleted:
 
@@ -80,7 +80,7 @@ When a row is deleted:
 
 ---
 
-## ## 5. Querying Tables with Deletion Vectors
+## 5. Querying Tables with Deletion Vectors
 
 You query normally — DVs are transparent:
 
@@ -100,7 +100,7 @@ Look for:
 
 ---
 
-## ## 6. Removing Deletion Vectors (Compaction)
+## 6. Removing Deletion Vectors (Compaction)
 
 ```sql
 OPTIMIZE sales_delta
@@ -111,7 +111,7 @@ ZORDER BY (id);
 
 ---
 
-## ## 7. Mermaid Diagram — How Deletion Vectors Work
+## 7. Mermaid Diagram — How Deletion Vectors Work
 
 ```mermaid
 flowchart LR
@@ -122,7 +122,7 @@ flowchart LR
 
 ---
 
-## ## 8. Mermaid Diagram — Lifecycle of a Delete
+## 8. Mermaid Diagram — Lifecycle of a Delete
 
 ```mermaid
 sequenceDiagram
@@ -140,7 +140,7 @@ sequenceDiagram
 
 # 🇲🇽 **Deletion Vectors en Delta Lake**
 
-## ## 1. ¿Qué son los Deletion Vectors?
+## 1. ¿Qué son los Deletion Vectors?
 
 Los **Deletion Vectors (DVs)** son una funcionalidad de Delta Lake que marca filas como *eliminadas lógicamente* **sin reescribir el archivo Parquet completo**.
 
@@ -157,7 +157,7 @@ Los DVs se almacenan por separado y se aplican al momento de lectura.
 
 ---
 
-## ## 2. ¿Por qué son importantes?
+## 2. ¿Por qué son importantes?
 
 ### Beneficios
 
@@ -175,7 +175,7 @@ Los DVs se almacenan por separado y se aplican al momento de lectura.
 
 ---
 
-## ## 3. Habilitar Deletion Vectors
+## 3. Habilitar Deletion Vectors
 
 ### Al crear la tabla
 
@@ -200,7 +200,7 @@ SET TBLPROPERTIES ('delta.enableDeletionVectors' = true);
 
 ---
 
-## ## 4. ¿Cómo funcionan internamente?
+## 4. ¿Cómo funcionan internamente?
 
 Cuando se elimina una fila:
 
@@ -211,7 +211,7 @@ Cuando se elimina una fila:
 
 ---
 
-## ## 5. Consultar tablas con DVs
+## 5. Consultar tablas con DVs
 
 La consulta es normal:
 
@@ -231,7 +231,7 @@ Buscar:
 
 ---
 
-## ## 6. Eliminar Deletion Vectors (Compaction)
+## 6. Eliminar Deletion Vectors (Compaction)
 
 ```sql
 OPTIMIZE sales_delta
@@ -242,7 +242,7 @@ Esto reescribe archivos y limpia los DVs.
 
 ---
 
-## ## 7. Diagrama Mermaid — Funcionamiento de DVs
+## 7. Diagrama Mermaid — Funcionamiento de DVs
 
 ```mermaid
 flowchart LR
@@ -253,7 +253,7 @@ flowchart LR
 
 ---
 
-## ## 8. Diagrama Mermaid — Ciclo de vida de un DELETE
+## 8. Diagrama Mermaid — Ciclo de vida de un DELETE
 
 ```mermaid
 sequenceDiagram
