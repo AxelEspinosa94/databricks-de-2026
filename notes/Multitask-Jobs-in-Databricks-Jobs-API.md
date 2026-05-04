@@ -9,7 +9,7 @@
 # 🇺🇸 **ENGLISH VERSION**
 # ------------------------------------------------------------
 
-# # **Databricks Jobs API — How to Create Multi‑Task Jobs**
+# **Databricks Jobs API — How to Create Multi‑Task Jobs**
 
 The Databricks Jobs API allows programmatic creation, modification, and execution of jobs.  
 This is essential for CI/CD, automation, and orchestrating multi-step pipelines.
@@ -24,7 +24,7 @@ This guide explains:
 
 ---
 
-# # **1. Jobs API Overview**
+# **1. Jobs API Overview**
 
 The main endpoint to create a job is:
 
@@ -42,7 +42,7 @@ A job can contain:
 
 ---
 
-# # **2. Correct Structure: `tasks[]` Array**
+# **2. Correct Structure: `tasks[]` Array**
 
 A multi-task job **must** use a `tasks` array.
 
@@ -104,7 +104,7 @@ Each task requires:
 
 ---
 
-# # **3. Incorrect Structure: `workflow` Array (Do NOT Use)**
+# **3. Incorrect Structure: `workflow` Array (Do NOT Use)**
 
 Some engineers mistakenly try:
 
@@ -117,7 +117,7 @@ Only `tasks[]` is valid.
 
 ---
 
-# # **4. Task Dependencies**
+# **4. Task Dependencies**
 
 Dependencies are expressed using:
 
@@ -131,7 +131,7 @@ This creates a DAG of execution.
 
 ---
 
-# # **5. Mermaid Diagram — Multi‑Task Job DAG**
+# **5. Mermaid Diagram — Multi‑Task Job DAG**
 
 ```mermaid
 flowchart TD
@@ -141,7 +141,7 @@ flowchart TD
 
 ---
 
-# # **6. Running a Job via API**
+# **6. Running a Job via API**
 
 ```
 POST /api/2.1/jobs/run-now
@@ -152,7 +152,7 @@ POST /api/2.1/jobs/run-now
 
 ---
 
-# # **7. Best Practices**
+# **7. Best Practices**
 
 - Use **task_key** names that reflect pipeline stages  
 - Keep clusters small for lightweight tasks  
@@ -162,7 +162,7 @@ POST /api/2.1/jobs/run-now
 
 ---
 
-# # **8. English Summary**
+# **8. English Summary**
 
 - Use `POST /api/2.1/jobs/create`  
 - Use **`tasks[]`**, not `workflow[]`  
@@ -176,7 +176,7 @@ POST /api/2.1/jobs/run-now
 # 🇲🇽 **VERSIÓN EN ESPAÑOL**
 # ------------------------------------------------------------
 
-# # **API de Jobs en Databricks — Cómo Crear Jobs con Múltiples Tareas**
+# **API de Jobs en Databricks — Cómo Crear Jobs con Múltiples Tareas**
 
 La API de Jobs permite crear, modificar y ejecutar jobs de forma programática.  
 Es esencial para CI/CD, automatización y orquestación de pipelines complejos.
@@ -191,7 +191,7 @@ Este documento explica:
 
 ---
 
-# # **1. Descripción General de la API**
+# **1. Descripción General de la API**
 
 El endpoint principal para crear un job es:
 
@@ -209,7 +209,7 @@ Un job puede contener:
 
 ---
 
-# # **2. Estructura Correcta: Arreglo `tasks[]`**
+# **2. Estructura Correcta: Arreglo `tasks[]`**
 
 Un job con múltiples pasos **debe** usar `tasks[]`.
 
@@ -271,7 +271,7 @@ Cada tarea requiere:
 
 ---
 
-# # **3. Estructura Incorrecta: `workflow[]` (NO usar)**
+# **3. Estructura Incorrecta: `workflow[]` (NO usar)**
 
 Algunos ingenieros intentan:
 
@@ -284,7 +284,7 @@ Solo `tasks[]` funciona.
 
 ---
 
-# # **4. Dependencias entre Tareas**
+# **4. Dependencias entre Tareas**
 
 Las dependencias se expresan así:
 
@@ -298,7 +298,7 @@ Esto crea un DAG de ejecución.
 
 ---
 
-# # **5. Diagrama Mermaid — DAG del Job**
+# **5. Diagrama Mermaid — DAG del Job**
 
 ```mermaid
 flowchart TD
@@ -308,7 +308,7 @@ flowchart TD
 
 ---
 
-# # **6. Ejecutar un Job vía API**
+# **6. Ejecutar un Job vía API**
 
 ```
 POST /api/2.1/jobs/run-now
@@ -319,7 +319,7 @@ POST /api/2.1/jobs/run-now
 
 ---
 
-# # **7. Buenas Prácticas**
+# **7. Buenas Prácticas**
 
 - Usa `task_key` descriptivos  
 - Mantén clústeres pequeños para tareas ligeras  
@@ -329,7 +329,7 @@ POST /api/2.1/jobs/run-now
 
 ---
 
-# # **8. Resumen en Español**
+# **8. Resumen en Español**
 
 - Usa `POST /api/2.1/jobs/create`  
 - Usa **`tasks[]`**, no `workflow[]`  
