@@ -248,8 +248,8 @@ flowchart LR
     B:::stream
     C:::mv
 
-    classDef stream fill:#d0f0ff,stroke:#0077aa,stroke-width:2px;
-    classDef mv fill:#ffe6cc,stroke:#cc6600,stroke-width:2px;
+    classDef stream fill:#d0f0ff,stroke:#0077aa,stroke-width:2px,color:#003355;
+    classDef mv fill:#ffe6cc,stroke:#cc6600,stroke-width:2px,color:#663300;
 ```
 
 ### ✔ Bronze → Streaming Table  
