@@ -9,14 +9,14 @@
 # 🇺🇸 **ENGLISH VERSION**
 # ------------------------------------------------------------
 
-# # **Databricks Jobs API — Where and How to Create API Scripts**
+# **Databricks Jobs API — Where and How to Create API Scripts**
 
 This section explains **where** you can create and run the scripts that call the Databricks Jobs API.  
 You have **three valid places** to write and execute these scripts:
 
 ---
 
-# # **1. Option A — Local Machine (Recommended for CI/CD)**
+# **1. Option A — Local Machine (Recommended for CI/CD)**
 
 You can create a script on your local machine using:
 
@@ -80,7 +80,7 @@ python create_job.py
 
 ---
 
-# # **2. Option B — Databricks Repos (Inside the Workspace)**
+# **2. Option B — Databricks Repos (Inside the Workspace)**
 
 You can create a script **inside Databricks Repos**, which syncs with GitHub.
 
@@ -110,7 +110,7 @@ Or:
 
 ---
 
-# # **3. Option C — Databricks Notebooks (Quick Testing)**
+# **3. Option C — Databricks Notebooks (Quick Testing)**
 
 You can also call the API **directly from a notebook** using Python or curl.
 
@@ -139,7 +139,7 @@ curl -X POST $host/api/2.1/jobs/create \
 
 ---
 
-# # **4. Where to Store the DAG Definition**
+# **4. Where to Store the DAG Definition**
 
 Your DAG (the `tasks[]` array) should live in:
 
@@ -168,7 +168,7 @@ Example JSON file:
 
 ---
 
-# # **5. Mermaid Diagram — Where Scripts Live**
+# **5. Mermaid Diagram — Where Scripts Live**
 
 ```mermaid
 flowchart LR
@@ -180,7 +180,7 @@ flowchart LR
 
 ---
 
-# # **6. English Summary**
+# **6. Summary**
 
 - You can create API scripts **locally**, in **Repos**, or in **Notebooks**  
 - The DAG lives inside the `tasks[]` array  
@@ -194,14 +194,14 @@ flowchart LR
 # 🇲🇽 **VERSIÓN EN ESPAÑOL**
 # ------------------------------------------------------------
 
-# # **API de Jobs — Dónde y Cómo Crear Scripts**
+# **API de Jobs — Dónde y Cómo Crear Scripts**
 
 Esta sección explica **dónde** puedes crear los scripts que llaman a la API de Databricks Jobs.  
 Tienes **tres lugares válidos**:
 
 ---
 
-# # **1. Opción A — Tu Máquina Local (Recomendado para CI/CD)**
+# **1. Opción A — Tu Máquina Local (Recomendado para CI/CD)**
 
 Puedes crear un script en tu compu usando:
 
@@ -244,7 +244,7 @@ print(resp.json())
 
 ---
 
-# # **2. Opción B — Databricks Repos (Dentro del Workspace)**
+# **2. Opción B — Databricks Repos (Dentro del Workspace)**
 
 Puedes crear scripts **dentro de Repos**, sincronizados con GitHub.
 
@@ -267,7 +267,7 @@ Puedes crear scripts **dentro de Repos**, sincronizados con GitHub.
 
 ---
 
-# # **3. Opción C — Notebooks (Para pruebas rápidas)**
+# **3. Opción C — Notebooks (Para pruebas rápidas)**
 
 Puedes llamar la API **directo desde un notebook**.
 
@@ -291,7 +291,7 @@ curl -X POST $host/api/2.1/jobs/create \
 
 ---
 
-# # **4. Dónde guardar el DAG**
+# **4. Dónde guardar el DAG**
 
 Tu DAG (el arreglo `tasks[]`) debe vivir en:
 
@@ -307,7 +307,7 @@ o
 
 ---
 
-# # **5. Diagrama Mermaid — Dónde viven los scripts**
+# **5. Diagrama Mermaid — Dónde viven los scripts**
 
 ```mermaid
 flowchart LR
@@ -319,7 +319,7 @@ flowchart LR
 
 ---
 
-# # **6. Resumen en Español**
+# **6. Resumen**
 
 - Puedes crear scripts en tu compu, en Repos o en Notebooks  
 - El DAG vive dentro de `tasks[]`  
