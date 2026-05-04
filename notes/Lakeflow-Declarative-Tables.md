@@ -95,15 +95,15 @@ GROUP BY customer_id, DATE(order_timestamp);
 
 ```mermaid
 flowchart LR
-    A[Bronze: Raw Streaming Data] --> B[Silver: Cleaned Streaming Data]
-    B --> C[Gold: Aggregated Materialized Views]
+    A["Bronze: Raw Streaming Data"] --> B["Silver: Cleaned Streaming Data"]
+    B --> C["Gold: Aggregated Materialized Views"]
 
     A:::stream
     B:::stream
     C:::mv
 
-    classDef stream fill:#d0f0ff,stroke:#0077aa,stroke-width:2px;font-color:#000000;
-    classDef mv fill:#ffe6cc,stroke:#cc6600,stroke-width:2px;font-color:#000000;
+    classDef stream fill:#d0f0ff,stroke:#0077aa,stroke-width:2px,color:#003355;
+    classDef mv fill:#ffe6cc,stroke:#cc6600,stroke-width:2px,color:#663300;
 ```
 
 ### ✔ Bronze → Streaming Table  
