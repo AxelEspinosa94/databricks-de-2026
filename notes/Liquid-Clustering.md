@@ -93,7 +93,7 @@ SET TBLPROPERTIES (
 
 ---
 
-# 5. Internal Architecture (Mermaid Diagram)
+# 5. Internal Architecture 
 
 ```mermaid
 sequenceDiagram
