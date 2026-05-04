@@ -7,7 +7,7 @@
 
 # 🇺🇸 **Change Data Feed (CDF) in Delta Lake**
 
-## ## **1. What is CDF?**
+## **1. What is CDF?**
 **Change Data Feed (CDF)** is a Delta Lake feature that allows you to **query only the rows that changed** (inserts, updates, deletes) between table versions.  
 Instead of scanning the entire table, you consume only incremental changes.
 
@@ -20,7 +20,7 @@ CDF exposes changes as a *virtual change log* with the following actions:
 
 ---
 
-## ## **2. Why CDF matters**
+## **2. Why CDF matters**
 CDF enables:
 
 - **Incremental pipelines** (Silver → Gold)  
@@ -31,7 +31,7 @@ CDF enables:
 
 ---
 
-## ## **3. How CDF works internally**
+## **3. How CDF works internally**
 CDF stores change information inside Delta transaction logs.  
 When enabled, Delta Lake writes additional metadata and row-level change files.
 
@@ -42,7 +42,7 @@ You can then query changes using:
 
 ---
 
-## ## **4. Enabling CDF**
+## **4. Enabling CDF**
 
 ### **Option A — When creating the table**
 ```sql
@@ -64,7 +64,7 @@ SET TBLPROPERTIES (delta.enableChangeDataFeed = true);
 
 ---
 
-## ## **5. Reading CDF in batch**
+## **5. Reading CDF in batch**
 ```sql
 SELECT *
 FROM table_changes('sales_silver', 10);
@@ -79,7 +79,7 @@ FROM table_changes('sales_silver', 10, 15);
 
 ---
 
-## ## **6. Reading CDF in streaming**
+## **6. Reading CDF in streaming**
 ```python
 df = (
     spark.readStream.format("delta")
@@ -93,7 +93,7 @@ df.writeStream.format("delta").table("sales_gold")
 
 ---
 
-## ## **7. Mermaid Diagram — How CDF flows in Medallion Architecture**
+## **7. Mermaid Diagram — How CDF flows in Medallion Architecture**
 
 ```mermaid
 flowchart LR
@@ -103,7 +103,7 @@ flowchart LR
 
 ---
 
-## ## **8. Mermaid Diagram — Internal CDF Mechanics**
+## **8. Mermaid Diagram — Internal CDF Mechanics**
 
 ```mermaid
 sequenceDiagram
@@ -120,7 +120,7 @@ sequenceDiagram
 
 # 🇲🇽 **Change Data Feed (CDF) en Delta Lake**
 
-## ## **1. ¿Qué es CDF?**
+## **1. ¿Qué es CDF?**
 **Change Data Feed (CDF)** es una funcionalidad de Delta Lake que permite **consultar únicamente las filas que cambiaron** (inserciones, actualizaciones y eliminaciones) entre versiones de una tabla Delta.
 
 En lugar de leer toda la tabla, consumes solo los cambios incrementales.
@@ -134,7 +134,7 @@ CDF expone acciones como:
 
 ---
 
-## ## **2. ¿Por qué es importante CDF?**
+## **2. ¿Por qué es importante CDF?**
 CDF permite:
 
 - Pipelines **incrementales** (Silver → Gold)  
@@ -145,7 +145,7 @@ CDF permite:
 
 ---
 
-## ## **3. ¿Cómo funciona internamente?**
+## **3. ¿Cómo funciona internamente?**
 CDF almacena información de cambios dentro del transaction log de Delta.  
 Cuando está habilitado, Delta escribe archivos adicionales con los cambios por fila.
 
@@ -156,7 +156,7 @@ Puedes leer los cambios mediante:
 
 ---
 
-## ## **4. Habilitar CDF**
+## **4. Habilitar CDF**
 
 ### **Opción A — Al crear la tabla**
 ```sql
@@ -178,7 +178,7 @@ SET TBLPROPERTIES (delta.enableChangeDataFeed = true);
 
 ---
 
-## ## **5. Leer CDF en batch**
+## **5. Leer CDF en batch**
 ```sql
 SELECT *
 FROM table_changes('sales_silver', 10);
@@ -193,7 +193,7 @@ FROM table_changes('sales_silver', 10, 15);
 
 ---
 
-## ## **6. Leer CDF en streaming**
+## **6. Leer CDF en streaming**
 ```python
 df = (
     spark.readStream.format("delta")
@@ -207,7 +207,7 @@ df.writeStream.format("delta").table("sales_gold")
 
 ---
 
-## ## **7. Diagrama Mermaid — Flujo CDF en arquitectura Medallion**
+## **7. Diagrama Mermaid — Flujo CDF en arquitectura Medallion**
 
 ```mermaid
 flowchart LR
@@ -217,7 +217,7 @@ flowchart LR
 
 ---
 
-## ## **8. Diagrama Mermaid — Mecánica interna de CDF**
+## **8. Diagrama Mermaid — Mecánica interna de CDF**
 
 ```mermaid
 sequenceDiagram
