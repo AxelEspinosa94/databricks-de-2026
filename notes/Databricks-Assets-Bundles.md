@@ -7,7 +7,7 @@
 
 # 🇺🇸 **Databricks Asset Bundles (DABs)**
 
-## ## **1. What are Databricks Asset Bundles?**
+## **1. What are Databricks Asset Bundles?**
 **Databricks Asset Bundles (DABs)** are an *Infrastructure-as-Code* framework that lets you define, version, deploy, and manage Databricks resources using declarative YAML files.
 
 A bundle can include:
@@ -28,7 +28,7 @@ DABs allow consistent, reproducible deployments across:
 
 ---
 
-## ## **2. Why DABs matter**
+## **2. Why DABs matter**
 DABs provide:
 
 - **Version-controlled deployments**  
@@ -39,7 +39,7 @@ DABs provide:
 
 ---
 
-## ## **3. Core files in a DAB project**
+## **3. Core files in a DAB project**
 
 A typical bundle has this structure:
 
@@ -63,7 +63,7 @@ project-root/
 
 ---
 
-## ## **4. The `bundle.yml` file (main configuration)**
+## **4. The `bundle.yml` file (main configuration)**
 
 This is the root descriptor of the bundle.
 
@@ -83,7 +83,7 @@ run_as:
 
 ---
 
-## ## **5. What `run_as` configures**
+## **5. What `run_as` configures**
 `run_as` defines **the execution identity for all jobs and pipelines in the bundle**, regardless of who deploys it.
 
 This ensures:
@@ -108,7 +108,7 @@ run_as:
 
 ---
 
-## ## **6. Jobs definition (`resources/jobs.yml`)**
+## **6. Jobs definition (`resources/jobs.yml`)**
 
 ```yaml
 resources:
@@ -126,7 +126,7 @@ resources:
 
 ---
 
-## ## **7. Environment overrides (`environments/prod.yml`)**
+## **7. Environment overrides (`environments/prod.yml`)**
 
 ```yaml
 bundle:
@@ -141,7 +141,7 @@ resources:
 
 ---
 
-## ## **8. Mermaid Diagram — DABs Architecture**
+## **8. Mermaid Diagram — DABs Architecture**
 
 ```mermaid
 flowchart TD
@@ -154,7 +154,7 @@ flowchart TD
 
 ---
 
-## ## **9. Mermaid Diagram — `run_as` Execution Identity**
+## **9. Mermaid Diagram — `run_as` Execution Identity**
 
 ```mermaid
 sequenceDiagram
@@ -173,7 +173,7 @@ sequenceDiagram
 
 # 🇲🇽 **Databricks Asset Bundles (DABs)**
 
-## ## **1. ¿Qué son los Databricks Asset Bundles?**
+## **1. ¿Qué son los Databricks Asset Bundles?**
 **Databricks Asset Bundles (DABs)** son un framework de *Infraestructura como Código* que permite definir, versionar, desplegar y administrar recursos de Databricks usando archivos YAML declarativos.
 
 Un bundle puede incluir:
@@ -188,7 +188,7 @@ Un bundle puede incluir:
 
 ---
 
-## ## **2. ¿Por qué son importantes?**
+## **2. ¿Por qué son importantes?**
 DABs permiten:
 
 - Despliegues reproducibles  
@@ -199,7 +199,7 @@ DABs permiten:
 
 ---
 
-## ## **3. Archivos principales de un proyecto DAB**
+## **3. Archivos principales de un proyecto DAB**
 
 ```
 project-root/
@@ -221,7 +221,7 @@ project-root/
 
 ---
 
-## ## **4. El archivo `bundle.yml`**
+## **4. El archivo `bundle.yml`**
 
 ### **Ejemplo**
 ```yaml
@@ -239,7 +239,7 @@ run_as:
 
 ---
 
-## ## **5. ¿Qué configura `run_as`?**
+## **5. ¿Qué configura `run_as`?**
 `run_as` define **la identidad con la que se ejecutan todos los jobs y pipelines del bundle**, sin importar quién haga el deploy.
 
 Esto garantiza:
@@ -251,7 +251,7 @@ Esto garantiza:
 
 ---
 
-## ## **6. Definición de jobs (`resources/jobs.yml`)**
+## **6. Definición de jobs (`resources/jobs.yml`)**
 
 ```yaml
 resources:
@@ -269,7 +269,7 @@ resources:
 
 ---
 
-## ## **7. Overrides por ambiente (`environments/prod.yml`)**
+## **7. Overrides por ambiente (`environments/prod.yml`)**
 
 ```yaml
 bundle:
@@ -284,7 +284,7 @@ resources:
 
 ---
 
-## ## **8. Diagrama Mermaid — Arquitectura de DABs**
+## **8. Diagrama Mermaid — Arquitectura de DABs**
 
 ```mermaid
 flowchart TD
@@ -297,7 +297,7 @@ flowchart TD
 
 ---
 
-## ## **9. Diagrama Mermaid — Identidad de ejecución `run_as`**
+## **9. Diagrama Mermaid — Identidad de ejecución `run_as`**
 
 ```mermaid
 sequenceDiagram
