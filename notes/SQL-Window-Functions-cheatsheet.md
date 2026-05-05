@@ -214,7 +214,7 @@ SUM(revenue) OVER (
 
 ---
 
-## 🧭 10. Mermaid Diagram — Window Function Concept
+## 🧭 10. Window Function Concept
 
 ```mermaid
 flowchart LR
@@ -226,7 +226,7 @@ flowchart LR
 
 ---
 
-## 🧭 11. Mermaid Diagram — Ranking Example
+## 🧭 11. Ranking Example
 
 ```mermaid
 sequenceDiagram
