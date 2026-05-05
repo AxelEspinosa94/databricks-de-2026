@@ -235,7 +235,7 @@ Specify columns to reduce shuffle.
 
 ---
 
-## 🧭 11. Mermaid Diagram — Spark SQL Execution Flow
+## 🧭 11. Spark SQL Execution Flow
 
 ```mermaid
 flowchart LR
@@ -248,7 +248,7 @@ flowchart LR
 
 ---
 
-## 🧭 12. Mermaid Diagram — Window Function Flow
+## 🧭 12. Window Function Flow
 
 ```mermaid
 flowchart TD
