@@ -9,7 +9,7 @@
 # 🇺🇸 **ENGLISH VERSION**
 # ------------------------------------------------------------
 
-# # **Spark UI & Query Optimization Guide**
+# **Spark UI & Query Optimization Guide**
 
 This document explains how to use the **Spark UI** to diagnose performance issues, understand query execution, and verify optimizations such as **predicate push‑down**, **partition pruning**, **broadcast joins**, and **shuffle behavior**.
 
@@ -18,7 +18,7 @@ This document explains how to use the **Spark UI** to diagnose performance issue
 
 ---
 
-# # **1. What is Spark UI?**
+# **1. What is Spark UI?**
 
 Spark UI is the primary interface for inspecting:
 
@@ -35,7 +35,7 @@ It is essential for performance debugging.
 
 ---
 
-# # **2. Where to Find Spark UI (Paid Databricks)**
+# **2. Where to Find Spark UI (Paid Databricks)**
 
 ### From a Notebook:
 ```
@@ -54,7 +54,7 @@ SQL → Query History → Spark UI
 
 ---
 
-# # **3. Spark UI Structure**
+# **3. Spark UI Structure**
 
 ```mermaid
 flowchart TD
@@ -68,7 +68,7 @@ flowchart TD
 
 ---
 
-# # **4. SQL Tab — The Most Important Section**
+# **4. SQL Tab — The Most Important Section**
 
 The **SQL** tab shows:
 
@@ -82,7 +82,7 @@ This is where you verify **predicate push‑down**.
 
 ---
 
-# # **5. How to Verify Predicate Push‑Down**
+# **5. How to Verify Predicate Push‑Down**
 
 Go to:
 
@@ -117,7 +117,7 @@ is **not empty**.
 
 ---
 
-# # **6. Common Optimization Indicators**
+# **6. Common Optimization Indicators**
 
 ### ✔ Predicate Push‑Down  
 ```
@@ -151,7 +151,7 @@ Spill occurred
 
 ---
 
-# # **7. Example Physical Plan (Annotated)**
+# **7. Example Physical Plan (Annotated)**
 
 ```text
 *(1) Project [id, amount]
@@ -164,7 +164,7 @@ Spill occurred
 
 ---
 
-# # **8. Mermaid Diagram — Query Flow**
+# **8. Mermaid Diagram — Query Flow**
 
 ```mermaid
 sequenceDiagram
@@ -182,7 +182,7 @@ sequenceDiagram
 
 ---
 
-# # **9. Summary (English)**
+# **9. Summary (English)**
 
 - Spark UI is essential for performance debugging  
 - Predicate push‑down is visible in the **Scan** node  
@@ -196,7 +196,7 @@ sequenceDiagram
 # 🇲🇽 **VERSIÓN EN ESPAÑOL**
 # ------------------------------------------------------------
 
-# # **Guía de Spark UI y Optimización de Consultas**
+# **Guía de Spark UI y Optimización de Consultas**
 
 Este documento explica cómo usar la **Spark UI** para diagnosticar problemas de rendimiento, entender la ejecución de consultas y verificar optimizaciones como **predicate push‑down**, **partition pruning**, **broadcast joins** y **shuffles**.
 
@@ -205,7 +205,7 @@ Este documento explica cómo usar la **Spark UI** para diagnosticar problemas de
 
 ---
 
-# # **1. ¿Qué es Spark UI?**
+# **1. ¿Qué es Spark UI?**
 
 Spark UI es la interfaz principal para inspeccionar:
 
@@ -222,7 +222,7 @@ Es esencial para depurar rendimiento.
 
 ---
 
-# # **2. ¿Dónde encontrar Spark UI (Databricks pagado)?**
+# **2. ¿Dónde encontrar Spark UI (Databricks pagado)?**
 
 ### Desde un Notebook:
 ```
@@ -241,7 +241,7 @@ SQL → Query History → Spark UI
 
 ---
 
-# # **3. Estructura de Spark UI**
+# **3. Estructura de Spark UI**
 
 ```mermaid
 flowchart TD
@@ -255,7 +255,7 @@ flowchart TD
 
 ---
 
-# # **4. La pestaña SQL — La más importante**
+# **4. La pestaña SQL — La más importante**
 
 La pestaña **SQL** muestra:
 
@@ -269,7 +269,7 @@ Aquí verificas **predicate push‑down**.
 
 ---
 
-# # **5. Cómo verificar Predicate Push‑Down**
+# **5. Cómo verificar Predicate Push‑Down**
 
 Ruta:
 
@@ -304,7 +304,7 @@ NO está vacío.
 
 ---
 
-# # **6. Indicadores comunes de optimización**
+# **6. Indicadores comunes de optimización**
 
 ### ✔ Predicate Push‑Down  
 ```
@@ -338,7 +338,7 @@ Spill occurred
 
 ---
 
-# # **7. Ejemplo de Physical Plan (Anotado)**
+# **7. Ejemplo de Physical Plan (Anotado)**
 
 ```text
 *(1) Project [id, amount]
@@ -351,7 +351,7 @@ Spill occurred
 
 ---
 
-# # **8. Diagrama Mermaid — Flujo de ejecución**
+# **8. Diagrama Mermaid — Flujo de ejecución**
 
 ```mermaid
 sequenceDiagram
@@ -369,7 +369,7 @@ sequenceDiagram
 
 ---
 
-# # **9. Resumen (Español)**
+# **9. Resumen (Español)**
 
 - Spark UI es clave para depurar rendimiento  
 - Predicate push‑down se ve en el nodo **Scan**  
