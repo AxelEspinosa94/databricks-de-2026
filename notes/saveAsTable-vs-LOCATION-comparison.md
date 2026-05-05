@@ -1,9 +1,7 @@
 # 🏛️ Delta Lake & Unity Catalog — Managed vs External Tables  
 
-## (Bilingual + GitHub‑Safe Mermaid Diagrams)
 
 This document explains the difference between **managed tables** (`saveAsTable`) and **external tables** (`CREATE TABLE ... LOCATION`) in Databricks Enterprise.  
-English version first, Spanish version after.
 
 ---
 
@@ -88,7 +86,7 @@ LOCATION 's3://bucket/path'
 
 ---
 
-# 5. Mermaid Diagrams (GitHub‑Safe)
+# 5. Diagrams
 
 ## 🔷 Managed Table Flow
 
@@ -208,7 +206,7 @@ LOCATION 's3://bucket/path'
 
 ---
 
-# 5. Diagramas Mermaid (Compatibles con GitHub)
+# 5. Diagramas
 
 ## 🔷 Flujo de Tabla Administrada
 
